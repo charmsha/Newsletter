@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --DarkGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    position: relative;
+}
+
+.backdrop{
+    background-color: var(--DarkGrey);
+    position: relative;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.checkbox{
+    width: 1.3em;
+    height: 1.3em;
+    background-color: var(--Tomato);
+    border-radius: 50%;
+    vertical-align: middle;
+    appearance: none;
+    border: 1px solid #ddd;
+    outline: none;
+    color: var(--White);
+}
+
+.container{
+    position: absolute;
+}
+
+.form{
+    background-color: var(--White);
+    display: grid;
+    place-items: center; 
+    height: 20%;
+    max-height: 50px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.svg{
+    width: 20px;
+}
+
+.btn{
+    color: var(--White);
+    background-color: var(--DarkGrey);
+    width: 100%;
+    border-radius: 4px;
+    height: 35px;
+}
+
+.email{
+    width: 100%;
+}
+
+
+@media screen and (max-width:1440px) {
+    .form{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2px;
+    }
+}
